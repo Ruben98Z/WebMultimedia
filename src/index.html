@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -58,7 +58,16 @@
                 <a class="dropdown-item" href="flights.html">Reservar vuelos</a>
                 <a class="dropdown-item" href="vehicles.html">Alquiler de vehiculos</a>
                 <a class="dropdown-item" href="weather.html">Climatologia</a>
-                
+                <li class="nav-item dropdown">
+                  <div class="btn-group">
+                <a class="nav-link dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tamanio de la letra</a>
+                <div class="dropdown-menu">
+                  <a class="increase">Incrementar tamaño</a>
+                  <a class="decrease">Disminuir tamaño</a>
+                  <a class="reset">Restablecer tamaño</a>
+                </div>
+                </div>
+                </li>
               </div>
             </div>
           </li>
@@ -86,7 +95,7 @@
 
   <!-- About Section -->
   <section id="about" class="about-section text-center">
-    <div class="container">
+    <div id="container" class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Sobre la ciudad...</h2>
@@ -106,7 +115,7 @@
         <div class="col-xl-8 col-lg-7">
           <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
         </div>
-        <div class="col-xl-4 col-lg-5">
+        <div id="container" class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h2>Partes de La Acropolis</h2>
             <p class="text-black-50 mb-0">La Acrópolis de Atenas contiene algunos de los monumentos más conocidos de la época clásica de Grecia: el Partenón, el Erecteion, el Templo de Atenea Niké y los Propileos son algunas de las construcciones más importantes y llamativas.</p>
@@ -208,10 +217,9 @@
     </div>
   </section>
 
-
   <!-- Localizacion Section -->
   <section id="location" class="location-section">
-    <div class="container">
+    <div id="container" class="container">
       <!--Section heading-->
       <h2 class="section-heading h1 pt-4">Ubicacion, precios y horarios</h2>
 
@@ -255,7 +263,7 @@
               </div>
 
               <div class="md-form">
-                <h4><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <h4 ><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
                 </svg> Transporte:</h4>
                 <p>Metro: Monastiraki, líneas 1 y 3; Akropoli, línea 2.</p>
@@ -469,7 +477,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/acropolis.min.js"></script>
-
+  <script src="js/fontResize.js"></script>
 </body>
 
 </html>
