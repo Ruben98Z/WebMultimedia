@@ -60,37 +60,35 @@
     <div class="container d-flex h-100 align-items-center">
       <!--Reserva Section-->
       <section class="book-hotel-section">
-        <div class="row">
-
           <!-- Formulario -->
-          <div class="col-lg-7">
-            <!--Form with header-->
-              <div class="card">
-                <div class="card-body">
-                  <h1 class="title">¡Reserva hoteles en Atenas!</h1>
+            <div class="card">
+              <h5 class="card-header info-color white-text text-center py-4">
+                  <strong>¡Reserve hoteles en Atenas!</strong>
+              </h5>
+              <!--Card content-->
+              <div class="card-body px-lg-5">
+                <form class="text-center" style="color: #757575;" action="https://www.hotelesbaratos.com/atenas/">
 
-                  <br>
-                  <div class="input-group date" data-provide="datepicker">
-                    
-                    <input type="text" class="form-control">
-                    <div class="input-group-addon">
-                        <span class="glyphicon glyphicon-th"></span>
+                    <!--<div class="input-group date" data-provide="datepicker">                   
+                      <input type="text" class="form-control">
+                      <div class="input-group-addon">
+                          <span class="glyphicon glyphicon-th"></span>
+                      </div>
+                    </div>-->
+                    <div class="form-group">
+                      <label >Desde</label>
+                      <input type="date" name="fday" id="fday" max="3000-12-31" min="1000-01-01" class="form-control">
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label >Desde</label>
-                    <input type="date" name="bday" max="3000-12-31" 
-                            min="1000-01-01" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label >Hasta</label>
-                    <input type="date" name="bday" min="1000-01-01"
-                            max="3000-12-31" class="form-control">
-                  </div>
+                    <div class="form-group">
+                      <label >Hasta</label>
+                      <input type="date" name="tday" id="tday" min="1000-01-01" max="3000-12-31" class="form-control">
+                    </div>
+
+                      <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Buscar</button>
+
+                </form>
               </div>
             </div>
-          </div>
-        </div>
       </section>
     </div>
   </header>
