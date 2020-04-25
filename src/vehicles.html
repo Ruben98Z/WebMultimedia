@@ -57,7 +57,134 @@
 
   <!-- Header -->
   <header class="vehicles-head">
-    
+    <div class="container d-flex h-100 align-items-center">
+      <!--Reserva Section-->
+      <section class="book-vehicle-section">
+          <!-- Formulario -->
+            <div class="card">
+              <h5 class="card-header info-color white-text text-center py-4">
+                  <strong>Buscar coches de alquiler</strong>
+              </h5>
+              <!--Card content-->
+              <div class="card-body px-lg-5">
+                <form class="form" style="color: #757575;" action="https://www.rentalcars.com/SearchResults.do?country=Grecia&doYear=2020&puTimeCombined=10%3a30&doFiltering=false&dropFtsIata=CFU&fromLocChoose=true&filterTo=1000&dropLocationName=Aeropuerto+de+Corf%c3%ba+(CFU)&ftsType=A&affiliateCode=alquilerdecoches-com&longitude=19.9122&ftsLocationSearch=17676&dropFtsSearch=L&preflang=es&doDay=1&filterFrom=0&searchType=&puMonth=4&ftsIata=CFU&dropCountry=Grecia&doTimeCombined=10%3a30&puDay=28&dropLongitude=19.9122&puHour=10&dropFtsLocationSearch=17676&dropFtsEntry=1472206&distance=10&ftsEntry=1472206&city=Corf%c3%ba&latitude=39.6022&dropCity=Corf%c3%ba&dropFtsType=A&driversAge=30&ftsCountry=Grecia&dropFtsLocationName=Aeropuerto+de+Corf%c3%ba+(CFU)&ftsCity=Corf%c3%ba&dropCountryCode=gr&doMinute=30&countryCode=gr&rccIntegration=stand-alone-search&puYear=2020&dropFtsCountry=Grecia&locationName=Aeropuerto+de+Corf%c3%ba+(CFU)&puMinute=30&returnCheckboxEnabled=true&coordinates=39.6022%2c19.9122&dropLocation=17676&doHour=10&dropLatitude=39.6022&dropCoordinates=39.6022%2c19.9122&dropFtsLocation=17676&ftsLocationName=Aeropuerto+de+Corf%c3%ba+(CFU)&ftsLocation=17676&ftsSearch=L&location=17676&doMonth=5&filterName=CarCategorisationSupplierFilter">
+                  <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Lugar de recogida">
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="return"> Devolver el auto en la misma oficina
+                    </label>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="selectedoday" class="mr-sm-2">Fecha de recogida</label>
+                        <input type="date" name="selectedoday" id="selectedoday" max="3000-12-31" min="1000-01-01" class="form-control mb-3 mr-sm-2">
+                        <label for="selectediday" class="mr-sm-2">Fecha de devolución</label>
+                        <input type="date" name="selectediday" id="selectediday" min="1000-01-01" max="3000-12-31" class="form-control mb-2 mr-sm-2">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label for="time1" class="mr-sm-2">Hora</label>
+                      <div class="row" id="time1">
+                        <div class="form-group d-inline-flex" >                       
+                          <select class="custom-select" id="hour1">
+                            <option selected></option>
+                            <option value="0">00</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                          </select>
+                          <select class="custom-select" id="minutes1">
+                            <option selected></option>
+                            <option value="0">00</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                          </select>   
+                        </div>
+                      </div>
+                      <label for="time2" class="mr-sm-2">Hora</label>
+                      <div class="row" id="time2">                        
+                        <div class="form-group d-inline-flex" >                       
+                          <select class="custom-select mb-3" id="hour2">
+                            <option selected></option>
+                            <option value="0">00</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                          </select>
+                          <select class="custom-select mb-3" id="minutes2">
+                            <option selected></option>
+                            <option value="0">00</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                          </select>   
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="driver"> Conductor de entre 30 y 65 años
+                    </label>
+                  </div>
+                </div> 
+                
+                <div class="row">
+                    <div class="col text-center">
+                      <button class="btn btn-outline-info btn-rounded z-depth-0 my-4 waves-effect" type="submit">Buscar</button>
+                    </div>
+                </div>     
+                  
+              </form>
+            </div>
+          </div>
+      </section>
+    </div>
   </header>
   
 
