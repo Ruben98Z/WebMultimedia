@@ -10,3 +10,9 @@
     background-attachment: scroll;
     background-size: cover;
 }
+
+.weatherwidget-io {
+    padding-bottom: 500px;
+    height: 200%;
+    line-height: 2.375rem;
+}
